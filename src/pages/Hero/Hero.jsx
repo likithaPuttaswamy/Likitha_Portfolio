@@ -131,8 +131,7 @@ const profile = {
             </div>
 
             <h3 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight text-white mb-4">
-              <SparklesText text="Hello" />{" "}
-              I'm <br />
+              <SparklesText text="Hello" /> I'm <br />
               <span className="gradient-text">Likitha Puttaswamy</span>
             </h3>
 
@@ -152,15 +151,20 @@ const profile = {
               >
                 Learn More <i className="fas fa-arrow-right"></i>
               </a>
+
               <a
-                href="/Likitha_Puttaswamy_C.pdf"
-                download="Likitha_Puttaswamy_Resume.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block bg-cyan-500 text-white font-medium py-2 px-4 rounded hover:bg-cyan-600 transition"
-              >
-                Download Resume
-              </a>
+  href="/Likitha.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-block bg-cyan-500 text-white font-medium py-2 px-4 rounded hover:bg-cyan-600 transition"
+>
+  View Resume
+</a>
+
+
+
+
+
             </div>
           </div>
 
