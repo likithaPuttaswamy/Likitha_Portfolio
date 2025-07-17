@@ -45,7 +45,6 @@ const GridBackground = () => (
       <rect width="100%" height="100%" fill="url(#grid)" />
     </svg>
 
-    {/* Cyan dots */}
     {Array.from({ length: 30 }).map((_, i) => (
       <div
         key={i}
@@ -59,7 +58,6 @@ const GridBackground = () => (
       />
     ))}
 
-    {/* Heavy white blinking dots */}
     {Array.from({ length: 70 }).map((_, i) => (
       <div
         key={"white-dot-" + i}
@@ -69,7 +67,7 @@ const GridBackground = () => (
           height: `${3 + Math.random() * 3}px`,
           top: `${Math.random() * 100}%`,
           left: `${Math.random() * 100}%`,
-          animationDelay: `${(i * 0.2 + Math.random())}s`,
+          animationDelay: `${i * 0.2 + Math.random()}s`,
           animationDuration: `${1 + Math.random()}s`,
           filter: "drop-shadow(0 0 6px rgba(255,255,255,0.8))",
         }}
@@ -93,7 +91,7 @@ const GridBackground = () => (
 export default function Hero() {
   const words = [
     "Data Analyst",
-    "data engineer",
+    "Data Engineer",
     "Data Scientist",
     "Software Engineer",
     "Policy Tech Enthusiast",
@@ -103,7 +101,7 @@ export default function Hero() {
 // Likitha's Profile
 const profile = {
   name: 'Likitha Puttaswamy',
-  title: 'Data Science for Policy | Software Engineer',
+  title: 'Data Science for Politics and Policy Making | Software Engineer',
   skills: [
     'Python', 'SQL', 'Java', 'Spring Boot',
     'Machine Learning', 'Tableau', 'Power BI', 'MongoDB'
@@ -155,11 +153,13 @@ const profile = {
                 Learn More <i className="fas fa-arrow-right"></i>
               </a>
               <a
-                href="/Likitha_Puttaswamy_Resume.pdf"
-                className="inline-flex items-center gap-2 border border-gray-600 px-6 py-3 rounded-xl text-white hover:bg-gray-800 transition"
-                download
+                href="/Likitha_Puttaswamy_C.pdf"
+                download="Likitha_Puttaswamy_Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-cyan-500 text-white font-medium py-2 px-4 rounded hover:bg-cyan-600 transition"
               >
-                Get Resume <i className="fas fa-file-alt"></i>
+                Download Resume
               </a>
             </div>
           </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import HeroImg from "@/assets/images/hero.jpg";
+import HeroImg from "@/assets/images/Hero1.jpg";
 import { FaPaintBrush, FaMusic } from "react-icons/fa";
 import { GiBallerinaShoes } from "react-icons/gi";
 
